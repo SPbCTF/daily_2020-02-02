@@ -1,0 +1,6 @@
+test:
+  password: $2b$12$bnSabaXAcs7ANVrvnu39Fe6vD5fiWCmFec4aWxgKhCQ41Xy9b1AFK
+  level: 0
+  phone: "79002345678"
+  signature: dfa89c75572014dffdd83813755598f9da37147d
+  name: "test"
