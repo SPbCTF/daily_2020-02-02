@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.backend
+    volumes:
+      - ./backend/users.yaml:/app/users.yaml
+    environment:
+      - FLAG=blzh{yaml_is_a_markup_not_a_database}
+      - SALT=9b56f89e7c6f613f3316624674b7d79bc18a766f63c9c63ad9d5012adcfb1697
+      - SECRET_KEY=1a792c4fdbff6a1ad46b28c9379bc728fb5b08adebe7fed7fcd62803840a8a66
