@@ -1,0 +1,9 @@
+FROM python:3.8
+
+RUN mkdir /check
+RUN chown -R root:root /check
+RUN chmod -R 700 /check
+
+RUN useradd kek
+
+RUN pip install transliterate
