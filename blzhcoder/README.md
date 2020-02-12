@@ -26,7 +26,7 @@ All configuration via ENV
 `FLAG` - flag
 
 ### Thanks
-I thank [@rive_n](tg://resolve?domain=rive_n) for the message about bug with `/images` rights on this task.
+I thank [@rive_n](https://t.me/rive_n) for the message about bug with `/images` rights on this task.
 
 ### Sploit
 See [solver.py](https://github.com/SPbCTF/daily_2020-02-02/blob/master/blzhcoder/check.py)
