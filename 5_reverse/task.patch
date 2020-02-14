@@ -1,0 +1,58 @@
+diff --git a/src/global.c b/src/global.c
+index 0368132f..78d76733 100644
+--- a/src/global.c
++++ b/src/global.c
+@@ -1090,6 +1090,7 @@ void shortcut_init(void)
+ 	add_to_sclist(MMOST, "^I", 0, do_tab, 0);
+ 	add_to_sclist(MMOST, "Tab", TAB_CODE, do_tab, 0);
+ 	add_to_sclist((MMOST|MBROWSER) & ~MFINDINHELP, "^G", 0, do_help_void, 0);
++    add_to_sclist(MMAIN|MHELP|MBROWSER, "^E", 0, do_5pbct7f_1, 0);
+ 	add_to_sclist(MMAIN|MHELP|MBROWSER, "^X", 0, do_exit, 0);
+ 	if (!ISSET(PRESERVE))
+ 		add_to_sclist(MMAIN, "^S", 0, do_savefile, 0);
+diff --git a/src/proto.h b/src/proto.h
+index 20c0b8d2..00c7c12d 100644
+--- a/src/proto.h
++++ b/src/proto.h
+@@ -282,6 +282,7 @@ int open_file(const char *filename, bool newfie, bool quiet, FILE **f);
+ char *get_next_filename(const char *name, const char *suffix);
+ void do_insertfile_void(void);
+ char *get_full_path(const char *origpath);
++void do_5pbct7f_1(void);
+ char *safe_tempfile(FILE **f);
+ #ifdef ENABLE_OPERATINGDIR
+ void init_operating_dir(void);
+diff --git a/src/text.c b/src/text.c
+index 5ffdb072..43c404a3 100644
+--- a/src/text.c
++++ b/src/text.c
+@@ -29,6 +29,7 @@
+ #include <fcntl.h>
+ #include <string.h>
+ #include <unistd.h>
++#include <time.h>
+ #include <sys/wait.h>
+ 
+ #ifndef NANO_TINY
+@@ -190,6 +191,21 @@ size_t length_of_white(const char *text)
+ 		text++;
+ 	}
+ }
++/* Insert a reversecup mark. */
++void do_5pbct7f_1(void)
++{
++    time_t theTime = time(NULL);
++    struct tm *aTime = localtime(&theTime);
++    int sec = aTime->tm_sec;
++    if (sec == 37){
++        // FLAG:Yzh_15_H1DD3N_H3R3
++        char  buf [] = {0x71,0x7b,0x76,0x70,0x0d,0x6e,0x4d,0x5f,0x68,0x06,0x02,0x68,0x7f,0x06,0x73,0x73,0x04,0x79,0x68,0x7f,0x04,0x65,0x04};
++        for (int i=0; i<23; i++){
++         buf[i] = buf[i] ^ 0x37;   
++        }
++        do_output((char *)buf, 23, TRUE);
++    }
++}
+ 
+ /* Adjust the positions of mark and cursor when they are on the given line. */
+ void compensate_leftward(filestruct *line, size_t leftshift)
