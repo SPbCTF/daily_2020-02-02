@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TCI</title>
+
+    <link rel="stylesheet" href="/static/tci.css" />
+</head>
+<body>
+    <header class="promo fluid">
+        <section class="fluid__section">
+            <h1 class="promo__title">TCI — The Future of Graphics</h1>
+            <p class="promo__about">
+                Do you hate JPEG's jackals, PNG size and quality of GIFs?<br/>
+                TCI is made especially for you — now using only one paramater
+                you can compress your picture up to 100 times!
+            </p>
+            <a href="/buy/" class="button button_promo">Buy now!</a>
+        </section>
+    </header>
+    <main class="main fluid">
+        <section class="fluid__section">
+            <h2 class="main__title">Your image</h2>
+            <a class="button button_download" href="/static/pictures/{{ image }}.tci">Download TCI file</a>
+            <h3 class="main__subtitle">Image preview</h3>
+            <img alt="TCI Image Preview" class="main__preview" src="/static/pictures/{{ image }}.png" />
+
+            <h3 class="main__subtitle">Want more?</h3>
+            <p class="main__text">
+                You can
+                <a href="/" class="link">try converting one more image for free</a>
+                or
+                <a href="/buy/" class="link">buy full version just for RUB 1337</a>
+                to get full format specifications, PNG to TCI (and vice-versa) converter for your desktop and
+                unlimited API. We deliver orders in 48 hours.
+            </p>
+        </section>
+    </main>
+    <footer class="footer fluid">
+        <section class="fluid__section">
+            &copy; blzh Inc. <!-- &amp; @nsychev for @spbctf --> 2020
+        </section>
+    </footer>
+</body>
+</html>

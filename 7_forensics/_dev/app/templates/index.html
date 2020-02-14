@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>TCI</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hashcash/jquery.hashcash.io@0.0.2/jquery.hashcash.io.css"
+          integrity="sha256-gWVsMUWdYuFsPMcvM1yRkkA76vgwaPZRNl6JyV1ifcs=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/static/tci.css" />
+</head>
+<body>
+    <header class="promo fluid">
+        <section class="fluid__section">
+            <h1 class="promo__title">TCI — The Future of Graphics</h1>
+            <p class="promo__about">
+                Do you hate JPEG's jackals, PNG size and quality of GIFs?<br/>
+                TCI is made especially for you — now using only one paramater
+                you can compress your picture up to 100 times!
+            </p>
+            <a href="/buy/" class="button button_promo">Buy now!</a>
+        </section>
+    </header>
+    <main class="main fluid">
+        <section class="fluid__section">
+            <h2 class="main__title">Try it now!</h2>
+            <form method="POST" action="/convert/" enctype="multipart/form-data" class="form">
+                <div class="form__field">
+                    <label class="form__label" for="image">Your image in any outdated format (JPG, PNG, GIF)</label>
+                    <input class="form__input" type="file" id="image" name="image" required accept="image/*" />
+                    <p class="form__hint">Not larger than 768&times;768 pixels or 1 megabyte</p>
+                </div>
+                <div class="form__field">
+                    <label class="form__label" for="quality">Quality (1&ndash;100)</label>
+                    <input class="form__input form__input_number" type="number" min="1" max="100"
+                           name="quality" id="quality" placeholder="Default" />
+                </div>
+                <div class="form__field">
+                    <button class="button button_form">Convert</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer fluid">
+        <section class="fluid__section">
+            &copy; blzh Inc. <!-- &amp; @nsychev for @spbctf --> 2020
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hashcash/jquery.hashcash.io@0.0.2/jquery.hashcash.io.min.js"
+            integrity="sha256-/rJwA3ZPfRcfvlHTMiLkS+mmXGlWrkDSKGpvgOAkRKE=" crossorigin="anonymous"></script>
+    <script src="/static/tci.js"></script>
+</body>
+</html>

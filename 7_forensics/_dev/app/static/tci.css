@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+
+    font: 18px Lato, sans-serif;
+}
+
+body {
+    position: relative;
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 0 5rem;
+}
+
+.promo {
+    background: #801818;
+    color: #ffffff;
+}
+
+.promo__title {
+    margin: 0.5rem 0;
+
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.promo__about {
+    color: #eee;
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+}
+
+.form__field {
+    margin: 1rem 0;
+}
+
+.form__label {
+    display: block;
+}
+
+.form__input {
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    margin: 0.3rem 0;
+    padding: 0.2rem;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font: inherit;
+}
+
+.form__input_number {
+    width: 100px;
+}
+
+.form__hint {
+    margin: 0.1rem 0 0;
+
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.main__title {
+    font-size: 2rem;
+    font-weight: inherit;
+}
+
+.main__subtitle {
+    font-size: 1.5rem;
+    font-weight: inherit;
+}
+
+.main__preview {
+    max-width: 60%;
+}
+
+.main__text {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.main__gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    align-items: center;
+    justify-items: center;
+}
+
+.main__thumb {
+    max-width: 100%;
+}
+
+.link {
+    border-bottom: 1px solid #6600ff;
+
+    color: #6600ff;
+    text-decoration: none;
+
+    transition: border-bottom-color 1s ease, color;
+}
+
+.link:hover {
+    border-bottom-color: #8533ff;
+
+    color: #8533ff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background: #eee;
+    color: #444;
+
+    line-height: 1rem;
+}
+
+.fluid {
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem 0;
+}
+
+.fluid__section {
+    width: 800px;
+    max-width: 100%;
+
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 0.6em 1em;
+
+    background: none;
+    border: none;
+    border-radius: 5px;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    outline: inherit;
+    text-decoration: none;
+
+    transition: background-color 1s ease;
+}
+
+.button_promo {
+    background: #00008b;
+    font-size: 1.2rem;
+}
+
+.button_promo:hover {
+    background: #120a8f;
+}
+
+.button_download {
+    background: #026340;
+    color: #ffffff;
+}
+
+.button_download:hover {
+    background: #00693e;
+}
+
+.button_form {
+    background: #1f75ff;
+}
+
+.button_form:hover {
+    background: #5294ff;
+}
+
+.button.hashcash-disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}

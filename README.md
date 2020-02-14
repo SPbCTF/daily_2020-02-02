@@ -17,12 +17,12 @@
 
 | Дата | Название | Категория | Авторы | Разбор |
 |---|---|---|---|---|
-| 3 февраля | [Подельник Ыжа](monday/) | OSINT | [Влад Росков](https://t.me/mrvos)<br/>[Ксения Кравцова](https://t.me/ksvark) | [0:50](https://youtu.be/lTFmPYYCW5w?t=0m50s)<br/>[Игорь Бровцин](https://t.me/Exie42) |
-| 4 февраля | [Восстановление пароля](tuesday/) | PWN | [Георгий Зайцев](https://t.me/groke) | [7:26](https://youtu.be/lTFmPYYCW5w?t=7m26s)<br/>[Илья Греков](https://t.me/kekov) |
-| 5 февраля | [Пиратский видос](wednesday/) | Crypto | [Александр Менщиков](https://t.me/n0str) | [19:03](https://youtu.be/lTFmPYYCW5w?t=19m3s)<br/>[Александр Менщиков](https://t.me/n0str) |
-| 6 февраля | [Ыжфон](thursday/) | Web | [Данил Белтюков](https://t.me/augustovich) | [27:17](https://youtu.be/lTFmPYYCW5w?t=27m17s)<br/>[Герман Риттер](https://t.me/exp101t) |
-| 7 февраля | [Нанотехнологии](friday/) | Reverse | [Артур Ханов](https://t.me/awengar) | [46:35](https://youtu.be/lTFmPYYCW5w?t=46m35s)<br/>[Артур Ханов](https://t.me/awengar) |
-| 8 февраля | [Кто на картинке?](saturday/) | Coding | [Роман Опякин](https://t.me/Sinketsu) | [1:00:25](https://youtu.be/lTFmPYYCW5w?t=1h0m25s)<br/>[Роман Опякин](https://t.me/Sinketsu) |
-| 9 февраля | [Ыжображения](sunday/) | Forensics | [Никита Сычев](https://t.me/nsychev) | [1:20:10](https://youtu.be/lTFmPYYCW5w?t=1h20m10s)<br/>[Никита Сычев](https://t.me/nsychev) |
+| 3 февраля | [Подельник Ыжа](1_osint/) | OSINT | [Влад Росков](https://t.me/mrvos)<br/>[Ксения Кравцова](https://t.me/ksvark) | [0:50](https://youtu.be/lTFmPYYCW5w?t=0m50s)<br/>[Игорь Бровцин](https://t.me/Exie42) |
+| 4 февраля | [Восстановление пароля](2_pwn/) | PWN | [Георгий Зайцев](https://t.me/groke) | [7:26](https://youtu.be/lTFmPYYCW5w?t=7m26s)<br/>[Илья Греков](https://t.me/kekov) |
+| 5 февраля | [Пиратский видос](3_crypto/) | Crypto | [Александр Менщиков](https://t.me/n0str) | [19:03](https://youtu.be/lTFmPYYCW5w?t=19m3s)<br/>[Александр Менщиков](https://t.me/n0str) |
+| 6 февраля | [Ыжфон](4_web/) | Web | [Данил Белтюков](https://t.me/augustovich) | [27:17](https://youtu.be/lTFmPYYCW5w?t=27m17s)<br/>[Герман Риттер](https://t.me/exp101t) |
+| 7 февраля | [Нанотехнологии](5_reverse/) | Reverse | [Артур Ханов](https://t.me/awengar) | [46:35](https://youtu.be/lTFmPYYCW5w?t=46m35s)<br/>[Артур Ханов](https://t.me/awengar) |
+| 8 февраля | [Кто на картинке?](6_coding/) | Coding | [Роман Опякин](https://t.me/Sinketsu) | [1:00:25](https://youtu.be/lTFmPYYCW5w?t=1h0m25s)<br/>[Роман Опякин](https://t.me/Sinketsu) |
+| 9 февраля | [Ыжображения](7_forensics/) | Forensics | [Никита Сычев](https://t.me/nsychev) | [1:20:10](https://youtu.be/lTFmPYYCW5w?t=1h20m10s)<br/>[Никита Сычев](https://t.me/nsychev) |
 
 
